@@ -36,6 +36,7 @@ public class ClienteRestController {
 	@GetMapping("/{id}")
 	public ResponseEntity<Cliente> buscarPorId(@PathVariable Long id) {
 		return ResponseEntity.ok(clienteService.buscarPorId(id));
+		
 	}
 
 	@PostMapping
